@@ -1,4 +1,4 @@
-# Phecho (['fekoʊ]) Readme
+# Phecho (['fekoʊ])
 
 ## About
 
