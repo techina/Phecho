@@ -27,6 +27,7 @@ class AuthController extends Controller
      * Create a new authentication controller instance.
      *
      * @return void
+     *
      */
     public function __construct()
     {
@@ -59,8 +60,8 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
+            'name'     => $data['name'],
+            'email'    => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
     }
