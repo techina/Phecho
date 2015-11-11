@@ -11,6 +11,7 @@ class EventServiceProvider extends ServiceProvider
      * The event listener mappings for the application.
      *
      * @var array
+     *
      */
     protected $listen = [
         'App\Events\SomeEvent' => [
@@ -21,8 +22,9 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Register any other events for your application.
      *
-     * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+     * @param \Illuminate\Contracts\Events\Dispatcher $events
      * @return void
+     *
      */
     public function boot(DispatcherContract $events)
     {
